@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "projectx"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlmodel = "^0.0.22"
+fastapi = "^0.115.5"
+python-json-logger = "^2.0.7"
+fastapi-users = {extras = ["redis",'sqlmodel'], version = "^14.0.0"}
+aiosqlite = "^0.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
